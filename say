@@ -1,0 +1,36 @@
+{
+  "name": "Say",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "info": "1",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "paremeysrfg",
+      "name": "Store Command Params"
+    },
+    {
+      "storage": "0",
+      "varName": "",
+      "name": "Delete Message"
+    },
+    {
+      "member": "1",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "username",
+      "name": "Store Member Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${tempVars(\"paremeysrfg\")}",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "cWNZw"
+}
