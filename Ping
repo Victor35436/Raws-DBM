@@ -1,0 +1,72 @@
+{
+  "name": "ping",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "info": "2",
+      "storage": "1",
+      "varName2": "thing",
+      "name": "Store Bot Client Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "storage": "1",
+      "varName2": "bot",
+      "name": "Get Bot as Member"
+    },
+    {
+      "member": "2",
+      "varName": "bot",
+      "info": "16",
+      "storage": "1",
+      "varName2": "url",
+      "name": "Store Member Info"
+    },
+    {
+      "member": "2",
+      "varName": "bot",
+      "info": "2",
+      "storage": "1",
+      "varName2": "botname",
+      "name": "Store Member Info"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "",
+      "storage": "1",
+      "varName": "embed",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "fieldName": "Meu ping",
+      "message": ":ping_pong: ***pong***  ${tempVars(\"thing\")}ms",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "message": "Copyright © 2019 ${tempVars(\"botname\")} - Todos os direitos reservados.",
+      "footerIcon": "${tempVars(\"url\")}",
+      "name": "Set Embed Footer"
+    },
+    {
+      "storage": "1",
+      "varName": "embed",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "SnHgX"
+}
