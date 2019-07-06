@@ -1,0 +1,42 @@
+{
+  "name": "Roll",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "PefKL",
+  "actions": [
+    {
+      "storage": "1",
+      "varName": "RandomNum",
+      "min": "1",
+      "max": "6",
+      "name": "Generate Random Number"
+    },
+    {
+      "title": "Dice",
+      "author": "",
+      "color": "",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "https://upload.wikimedia.org/wikipedia/commons/3/37/Dice_(PSF).png",
+      "storage": "1",
+      "varName": "DiceEmbedMsg",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "DiceEmbedMsg",
+      "message": ":game_die: ***Você rolou o número ${tempVars(\"RandomNum\")}!***",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "DiceEmbedMsg",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_aliases": []
+}
