@@ -1,0 +1,138 @@
+{
+  "name": "Serverinfo",
+  "permissions": "NONE",
+  "restriction": "1",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "1",
+      "storage": "1",
+      "varName2": "servid",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "12",
+      "storage": "1",
+      "varName2": "servmemb",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "6",
+      "storage": "1",
+      "varName2": "servveri",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "servnam",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "4",
+      "storage": "1",
+      "varName2": "servreg",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "5",
+      "storage": "1",
+      "varName2": "servico",
+      "name": "Store Server Info"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "11",
+      "storage": "1",
+      "varName2": "servown",
+      "name": "Store Server Info"
+    },
+    {
+      "title": "",
+      "author": "",
+      "color": "#202123",
+      "timestamp": "false",
+      "url": "",
+      "authorIcon": "",
+      "imageUrl": "",
+      "thumbUrl": "${tempVars(\"servico\")}",
+      "storage": "1",
+      "varName": "server",
+      "name": "Create Embed Message"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "fieldName": "❯ Name",
+      "message": "${tempVars(\"servnam\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "fieldName": "❯ ID",
+      "message": "${tempVars(\"servid\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "fieldName": "❯ Region",
+      "message": "${tempVars(\"servreg\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "fieldName": "❯ Verification Level",
+      "message": "${tempVars(\"servveri\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "fieldName": "❯ Members",
+      "message": "${tempVars(\"servmemb\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "fieldName": "❯ Server Owner",
+      "message": "${tempVars(\"servown\")}",
+      "inline": "1",
+      "name": "Add Embed Field"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "message": "",
+      "name": "Set Embed Description"
+    },
+    {
+      "storage": "1",
+      "varName": "server",
+      "channel": "0",
+      "varName2": "",
+      "name": "Send Embed Message"
+    }
+  ],
+  "_id": "zkfQV"
+}
