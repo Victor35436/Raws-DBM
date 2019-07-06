@@ -1,0 +1,61 @@
+{
+  "name": "Ausente",
+  "permissions": "NONE",
+  "restriction": "1",
+  "_id": "psmKH",
+  "actions": [
+    {
+      "info": "0",
+      "infoIndex": "1",
+      "storage": "1",
+      "varName": "time.set",
+      "name": "Store Command Params"
+    },
+    {
+      "info": "1",
+      "infoIndex": "2",
+      "storage": "1",
+      "varName": "reminder.set",
+      "name": "Store Command Params"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Timer settado para: ${tempVars(\"time.set\")} mins!",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "Você será mencionado quando o afk acabar 👍",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "time": "${tempVars(\"time.set\")}",
+      "measurement": "2",
+      "name": "Wait"
+    },
+    {
+      "comment": "If you Want To Change Something Above This Feel Free",
+      "color": "#ff8080",
+      "name": "Comment"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "${member} Você pediu para ser notificado após **${tempVars(\"time.set\")}minutos**",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "comment": "This Is easliy customizable, so go crazy.",
+      "color": "#ff8080",
+      "name": "Comment"
+    }
+  ]
+}
