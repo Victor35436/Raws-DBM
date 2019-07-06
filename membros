@@ -1,0 +1,39 @@
+{
+  "name": "membros",
+  "temp": "",
+  "event-type": "1",
+  "_id": "yiRzR",
+  "actions": [
+    {
+      "info": "0",
+      "find": "PUTSERVERIDHERE",
+      "storage": "1",
+      "varName": "Server1",
+      "name": "Find Server"
+    },
+    {
+      "server": "1",
+      "varName": "Server1",
+      "name": "Change Server"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "info": "17",
+      "storage": "1",
+      "varName2": "Member-Count",
+      "name": "Store Server Info"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "**${tempVars(\"Member-Count\")} Usuários.**",
+      "storage": "1",
+      "varName2": "Member-Count",
+      "name": "Send Message"
+    }
+  ],
+  "restriction": "0",
+  "comType": "0",
+  "permissions": "NONE"
+}
