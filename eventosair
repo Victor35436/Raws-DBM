@@ -1,0 +1,24 @@
+{
+  "name": "memberleavemsg",
+  "temp": "member",
+  "event-type": "7",
+  "actions": [
+    {
+      "server": "0",
+      "varName": "",
+      "info": "2",
+      "storage": "1",
+      "varName2": "serverName",
+      "name": "Store Server Info"
+    },
+    {
+      "channel": "4",
+      "varName": "",
+      "message": "${tempVars(\"member\")} Saiu do **${tempVars(\"serverName\")}**,\nEsperamos que volte :cry:",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "_id": "EAdHm"
+}
